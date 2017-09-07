@@ -1,9 +1,11 @@
-A simple Arduino library for melodies.
+A simple Arduino library for melodies. 
 
 ### Usage
 
-\#include <MusicLibrary.h>
-\#define PIN 8 //pin D8 on Arduino
+```
+#include <MusicLibrary.h>
+
+#define PIN 8 //pin D8 on Arduino
 
 MusicLibrary ml(PIN);
 setup() {
@@ -16,3 +18,4 @@ loop() {
  ml.failure();
  delay(500);
 }
+```
