@@ -5,11 +5,14 @@ A simple Arduino library for melodies.
 \#include <MusicLibrary.h>
 \#define PIN 8 //pin D8 on Arduino
 
+MusicLibrary ml(PIN);
 setup() {
-  MusicLibrary ml(PIN);
 }
 loop() {
  ml.starwars();
+ delay(500);
  ml.success();
+ delay(500);
  ml.failure();
+ delay(500);
 }

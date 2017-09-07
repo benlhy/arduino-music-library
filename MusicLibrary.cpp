@@ -27,25 +27,27 @@ const int gH = 784;
 const int gSH = 830;
 const int aH = 880;
 
-void beep(int note, int duration)
-{
-  //Play tone on buzzerPin
-  tone(_pin, note, duration);
 
-  //Play different LED depending on value of 'counter'
-  delay(50);
-  //Stop tone on buzzerPin
-  noTone(_pin);
-
-  delay(50);
-
-}
 
 
 MusicLibrary::MusicLibrary(int pin)
 {
   pinMode(pin, OUTPUT);
   _pin = pin;
+}
+
+void MusicLibrary::beep(int note, int duration)
+{
+  //Play tone on buzzerPin
+  tone(_pin, note, duration);
+
+  //Play different LED depending on value of 'counter'
+  delay(duration);
+  //Stop tone on buzzerPin
+  noTone(_pin);
+
+  delay(50);
+
 }
 
 void MusicLibrary::starwars()
