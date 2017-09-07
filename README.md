@@ -1,4 +1,4 @@
-A simple Arduino library for melodies. 
+A simple Arduino library for melodies. Download zip file and in Arduino, Sketch > Include Library > Import zip library
 
 ### Usage
 
